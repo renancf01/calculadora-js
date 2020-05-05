@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadora.js"></script> 
+    <title>calculadora</title>
+</head>
+<body>
+    <form name="calcform" method="post" action="">
+        <fieldset>
+
+            <input type="text" name="visor" id="visor">
+
+            <table id="calc">
+                <tr>
+                    <td><input type="button" name="num7" class="num" value="7" onclick="calcNum(7)" /></td>
+                    <td><input type="button" name="num8" class="num" value="8" onclick="calcNum(8)" /></td>
+                    <td><input type="button" name="num9" class="num" value="9" onclick="calcNum(9)" /></td>
+                    <td><input type="button" name="plus" class="oper" value="+" onclick="calcParse('plus')" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="num4" class="num" value="4" onclick="calcNum(4)" /></td>
+                    <td><input type="button" name="num5" class="num" value="5" onclick="calcNum(5)" /></td>
+                    <td><input type="button" name="num6" class="num" value="6" onclick="calcNum(6)" /></td>
+                    <td><input type="button" name="minus" class="oper" value="-" onclick="calcParse('minus')" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="num1" class="num" value="1" onclick="calcNum(1)" /></td>
+                    <td><input type="button" name="num2" class="num" value="2" onclick="calcNum(2)" /></td>
+                    <td><input type="button" name="num3" class="num" value="3" onclick="calcNum(3)" /></td>
+                    <td><input type="button" name="multi" class="oper" value="*" onclick="calcParse('multi')" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="num0" class="num" value="0" onclick="calcNum(0)" /></td>
+                    <td><input type="button" name="equal" class="num" value="=" onclick="calcParse('equal')" /></td>
+                    <td><input type="button" name="clean" class="num" value="AC" onclick="cleanCalc('')" /></td>
+                    <td><input type="button" name="divi" class="oper" value="/" onclick="calcParse('divi')" /></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
